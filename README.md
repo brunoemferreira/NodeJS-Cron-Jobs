@@ -3,6 +3,8 @@
 <h2> 🕐 Sobre o Node Cron</h2>
 O cron fornece uma maneira de repetir uma tarefa em um intervalo de tempo específico. Pode haver tarefas repetitivas, como registro e execução de backups, que precisam ocorrer diariamente ou semanalmente.
 
+</br>
+
 > Cada asterisco que faz parte da sintaxe do cron representa diferentes unidades de tempo como mostrado abaixo : 
 
 ```text
@@ -76,10 +78,6 @@ cron.schedule('* * * Jan,Sep Sun', () => {
 ```
 
 <h2> ⏰ Conhecendo os Métodos</h2>
-Argumentos : 
-
-* expression
-
 
 Argumentos    | Tipo         | Descrição                           | Exemplo 
 ------------- | ------------ | ----------------------------------- | ----------------
@@ -161,7 +159,10 @@ ____
 
 <h2> 💎 Sobre os Exemplos</h2>
 
-<h3>Exemplo 1 - </h3>
+<h3>Exemplo 1 - Agendamento para execução minuto à minuto</h3>
+
+* Nesse agendamento ao passar todos os asteriscos sem informar parâmetro algum, o cron o toma como padrão sendo assim a função que será executada dentro do schedule será executada minuto a minuto;
+
 <h3>Exemplo 2 - </h3>
 <h3>Exemplo 3 - </h3>
 
