@@ -159,20 +159,31 @@ ____
 
 <h2> 💎 Sobre os Exemplos</h2>
 
-<h3>Exemplo 1 - Agendamento para execução minuto à minuto</h3>
+<h3> 💻 Exemplo 1 - Agendamento para execução minuto à minuto</h3>
 
 * Nesse agendamento ao passar todos os asteriscos sem informar parâmetro algum, o cron o toma como padrão sendo assim a função que será executada dentro do schedule será executada minuto a minuto;
 
-<h3>Exemplo 2 - </h3>
-<h3>Exemplo 3 - </h3>
+<h3> 💻 Exemplo 2 - Agendamento de Exclusão de logs</h3>
 
+* 
+
+<h3> 💻 Exemplo 3 - Backup Agendado de Banco SQLite</h3>
+
+* Nesse agendamento ele faz um Backup do Banco SQLite as 23:59 diariamente, se o backup for bem sucedido ele informa uma mensagem caso contrário e apresente erro ele será encerrado, para fazer o backup do sqlite é usada a biblioteca shelljs que faz a execução de um script shell para efetuar o backup dos dados;
+
+<h3> 💻 Exemplo 4 - Agendamento de Envio de Emails</h3>
+
+* 
 
 <h2> ⚙️ Tecnologias</h2>
 
-* [Visual Studio Code]() - IDE
-* [NodeJS]() - 
+* [Visual Studio Code](https://code.visualstudio.com/) - IDE
+* [NodeJS](https://nodejs.org/en/) - Ambiente de execução JavaScript
 
 <h3> ⚙️ Bibliotecas</h3>
 
- * [express]() - 
+ * [express](https://expressjs.com/pt-br/) - Framework para desenvolvimento Web 
  * [node-cron](https://www.npmjs.com/package/node-cron) - Pacote para agendamento de tarefas
+ * [fs](https://www.w3schools.com/nodejs/nodejs_filesystem.asp) - Pacote para manipulação de arquivos
+ * [shelljs](https://www.npmjs.com/package/shelljs) - Pacote para execução de comandos shell
+ * [nodemailer](https://www.npmjs.com/package/nodemailer) - Pacote para envio de Emails
