@@ -196,10 +196,47 @@ ____
 
 
 
+<h3> 🎲 Rodando os Exemplos</h3>
 
+Serve para todos os exemplos : 
 
-<h3> ⚙️ Referências</h3>
+```bash
+# Clone este repositório dos exemplos ( aqui ja possui todos os exemplos )
+$ git clone https://github.com/brunoemferreira/NodeJS-Cron-Jobs.git
+```
+
+<h4>Exemplo 1</h4>
+
+```bash
+# execute o comando
+$ node example1.js
+```
+
+<h4>Exemplo 2</h4>
+
+```bash
+# execute o comando
+$ node example2.js
+```
+
+<h4>Exemplo 3</h4>
+
+```bash
+# execute o comando
+$ node example3.js
+```
+
+<h4>Exemplo 4</h4>
+
+```bash
+# execute o comando
+$ node example4.js
+```
+
+<h3>Referências</h3>
 
 * [Node Cron](https://www.npmjs.com/package/node-cron) - NPM
 * [DigitalOcean](https://www.digitalocean.com/community/tutorials/nodejs-cron-jobs-by-examples) - How To Use node-cron to Run Scheduled Jobs in Node.js
 
+---
+⌨️ com ❤️ por [Bruno Eduardo](https://gist.github.com/brunoemferreira) 😊
