@@ -1,6 +1,30 @@
-<h1>Exemplos de Agendamento de tarefas com Node Cron</h1>
+<h1>Agendamento de tarefas com Node Cron com exemplos</h1>
 
-<h2> 🕐 Sobre o Node Cron</h2>
+<p align="center">Finalizado 07/01/2021</p>
+
+<p align="center">
+  <a href="#sobre">Sobre o Node Cron</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#metodos">Conhecendo os Métodos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#scheduled">Métodos ScheduledTask</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#exemplos">Sobre os Exemplos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rodando">Rodando os Exemplos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#referencias">Referências</a>&nbsp;&nbsp;&nbsp;
+</p>
+
+<!-- ************************************* Baadges ********************************************* -->
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/brunoemferreira/NodeJS-Cron-Jobs?color=%2304D361">
+
+ <img alt="Repository size" src="https://img.shields.io/github/repo-size/brunoemferreira/NodeJS-Cron-Jobs">
+
+  <a href="https://github.com/tgmarinho/nlw1/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/brunoemferreira/NodeJS-Cron-Jobs">
+  </a>
+</p>
+<!-- ************************************* Sobre *********************************************** -->
+
+<h2 id="sobre"> 🚀 Sobre o Node Cron</h2>
 O cron fornece uma maneira de repetir uma tarefa em um intervalo de tempo específico. Pode haver tarefas repetitivas, como registro e execução de backups, que precisam ocorrer diariamente ou semanalmente.
 
 </br>
@@ -77,7 +101,7 @@ cron.schedule('* * * Jan,Sep Sun', () => {
 });
 ```
 
-<h2> ⏰ Conhecendo os Métodos</h2>
+<h2 id="metodos"> ⏰ Conhecendo os Métodos</h2>
 
 Argumentos    | Tipo         | Descrição                           | Exemplo 
 ------------- | ------------ | ----------------------------------- | ----------------
@@ -94,7 +118,7 @@ timezone      | timezone     | Timezone que será usada para o agendamento | tim
 
 </br>
 
-<h2> ⏰ Métodos ScheduledTask</h2>
+<h2 id="scheduled"> ⏰ Métodos ScheduledTask</h2>
 
 > Iniciar um Agendamento
 ```js
@@ -157,7 +181,7 @@ var invalid = cron.validate('60 * * * *');
 
 ____
 
-<h2> 💎 Sobre os Exemplos</h2>
+<h2 id="exemplos"> 💎 Sobre os Exemplos</h2>
 
 <h3> 💻 Exemplo 1 - Agendamento para execução minuto à minuto</h3>
 
@@ -165,7 +189,7 @@ ____
 
 <h3> 💻 Exemplo 2 - Agendamento de Exclusão de logs</h3>
 
-* 
+* Nesse agendamento a programação dele é para que todo vigésimo primeiro dia do mês ele faça a remoção do arquivo de log de erros, aqui utilizamos a biblioteca fs que faz a manipulação de arquivos com o node juntamente com o node cron para o agendamento.
 
 <h3> 💻 Exemplo 3 - Backup Agendado de Banco SQLite</h3>
 
@@ -179,7 +203,7 @@ ____
 * É criado o processo de envio de email onde são instanciadas as variáveis acima, com as configurações de email e da mensagem a sere enviada, contendo um controle de erros;   
 
 
-<h2> ⚙️ Tecnologias</h2>
+<h2 id="tecnologias"> ⚙️ Tecnologias</h2>
 
 * [Visual Studio Code](https://code.visualstudio.com/) - IDE
 * [NodeJS](https://nodejs.org/en/) - Ambiente de execução JavaScript
@@ -192,11 +216,8 @@ ____
  * [shelljs](https://www.npmjs.com/package/shelljs) - Pacote para execução de comandos shell
  * [nodemailer](https://www.npmjs.com/package/nodemailer) - Pacote para envio de Emails
 
-<h3> ⚙️ Rodando os projetos</h3>
 
-
-
-<h3> 🎲 Rodando os Exemplos</h3>
+<h3 id="rodando"> 🎲 Rodando os Exemplos</h3>
 
 Serve para todos os exemplos : 
 
@@ -233,7 +254,7 @@ $ node example3.js
 $ node example4.js
 ```
 
-<h3>Referências</h3>
+<h3 id="referencias">Referências</h3>
 
 * [Node Cron](https://www.npmjs.com/package/node-cron) - NPM
 * [DigitalOcean](https://www.digitalocean.com/community/tutorials/nodejs-cron-jobs-by-examples) - How To Use node-cron to Run Scheduled Jobs in Node.js
