@@ -173,7 +173,11 @@ ____
 
 <h3> 💻 Exemplo 4 - Agendamento de Envio de Emails</h3>
 
-* 
+* Nesse agendamento temos o envio de emails automáticos toda quarta-feira;
+* É criada uma criada uma variável transportadora que contenha todas as configurações para envio de email;
+* É criada uma variável com as configurações da mensagem;  
+* É criado o processo de envio de email onde são instanciadas as variáveis acima, com as configurações de email e da mensagem a sere enviada, contendo um controle de erros;   
+
 
 <h2> ⚙️ Tecnologias</h2>
 
@@ -187,3 +191,15 @@ ____
  * [fs](https://www.w3schools.com/nodejs/nodejs_filesystem.asp) - Pacote para manipulação de arquivos
  * [shelljs](https://www.npmjs.com/package/shelljs) - Pacote para execução de comandos shell
  * [nodemailer](https://www.npmjs.com/package/nodemailer) - Pacote para envio de Emails
+
+<h3> ⚙️ Rodando os projetos</h3>
+
+
+
+
+
+<h3> ⚙️ Referências</h3>
+
+* [Node Cron](https://www.npmjs.com/package/node-cron) - NPM
+* [DigitalOcean](https://www.digitalocean.com/community/tutorials/nodejs-cron-jobs-by-examples) - How To Use node-cron to Run Scheduled Jobs in Node.js
+
