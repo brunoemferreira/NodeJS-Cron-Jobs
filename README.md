@@ -46,7 +46,7 @@ cron.schedule ('1,2,4,5 * * * * ' , ( ) => {
 var cron = require('node-cron');
  
 cron.schedule('1-5 * * * *', () => {
-  console.log('running every minute to 1 from 5');
+  console.log('Executando a cada minuto para 1 de 5');
 });
 ```
 
@@ -55,7 +55,7 @@ cron.schedule('1-5 * * * *', () => {
 var cron = require('node-cron');
  
 cron.schedule('*/2 * * * *', () => {
-  console.log('running a task every two minutes');
+  console.log('Executando a tarefa a cada 2 minutos');
 });
 ```
 
@@ -65,7 +65,7 @@ cron.schedule('*/2 * * * *', () => {
 var cron = require('node-cron');
  
 cron.schedule('* * * January,September Sunday', () => {
-  console.log('running on Sundays of January and September');
+  console.log('Executando aos Domingos de Janeiro e Setembro');
 });
 ```
 ```js
@@ -73,7 +73,7 @@ cron.schedule('* * * January,September Sunday', () => {
 var cron = require('node-cron');
  
 cron.schedule('* * * Jan,Sep Sun', () => {
-  console.log('running on Sundays of January and September');
+  console.log('Executando aos Domingos de Janeiro e Setembro');
 });
 ```
 
@@ -121,7 +121,7 @@ task.start();
 var cron = require('node-cron');
  
 var task = cron.schedule('* * * * *', () =>  {
-  console.log('will execute every minute until stopped');
+  console.log('Executando a cada minuto até parar');
 });
 
 // Finaliza um agendamento 
@@ -136,7 +136,7 @@ task.stop();
 var cron = require('node-cron');
  
 var task = cron.schedule('* * * * *', () =>  {
-  console.log('will not execute anymore, nor be able to restart');
+  console.log('Não executará mais nem será capaz de reiniciar');
 });
 
 // Destrói o Agendamento 
