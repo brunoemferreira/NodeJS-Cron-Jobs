@@ -1,3 +1,9 @@
+<div align="center">
+  <img alt="Logo" src="./images/logo.png">
+</div>
+
+</br>
+
 <h1>Agendamento de tarefas com Node Cron com exemplos</h1>
 
 <p align="center">Finalizado 07/01/2021</p>
